@@ -32,7 +32,7 @@ export default {
         card: Object
     },
     computed: {
-        cardNumber(){
+        cardProperties(){
         return this.card.number.match(/.{1,4}/g).join(' ')
         },
     },
