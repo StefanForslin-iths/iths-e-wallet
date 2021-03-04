@@ -25,7 +25,6 @@
         </section>
     </article>
 </template>
-
 <script>
 export default {
     props: {
@@ -38,12 +37,10 @@ export default {
     },
 }
 </script>
-
 <style scoped>
 * {
     box-sizing: border-box;
 }
-
 .card {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -56,44 +53,36 @@ export default {
     background: linear-gradient(237.75deg,hsla(0,0%,100%,.24),hsla(0,0%,100%,0)),#d0d0d0;
     text-shadow: -1px -1px 2px hsla(0,0%,100%,.4);
 }
-
 header {
     display: flex;
     justify-content: space-between;
 }
-
 .number {
     font-size: 1.6rem;
     margin: 8px 0 0;
     color: #fff;
 }
-
 .chip {
     align-self: flex-end;
 }
-
 .info {
     display: flex;
     justify-content: space-between;
 }
-
 span {
     display: block;
     text-transform: uppercase;
     font-size: 0.7rem;
     margin: 0 0 0.25rem;
 }
-
 .output-text {
     text-transform: uppercase;  
     margin: 0;
     padding: 0;
 }
-
 .valid {
     text-align: end;
 }
-
 .evil {
     background: linear-gradient(248.3deg,rgba(0,0,0,.16),transparent),#961b1b;
     color: #fff;
@@ -110,5 +99,4 @@ span {
     background: linear-gradient(248.3deg,hsla(0,0%,100%,.15),hsla(0,0%,100%,0)),#222;
     color: #fff;
 }
-
 </style>

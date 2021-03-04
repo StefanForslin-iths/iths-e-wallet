@@ -12,15 +12,11 @@
     </main>
   </div>
 </template>
-
 <script>
-
 import Top from '@/components/Top.vue'
 import Card from '@/components/Card.vue'
 import CardForm from '@/components/CardForm.vue'
-
 export default {
-
   components: {
     Top,
     Card,
@@ -56,6 +52,5 @@ export default {
   },
 }
 </script>
-
 <style>
 </style>

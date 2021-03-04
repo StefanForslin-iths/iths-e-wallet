@@ -1,4 +1,4 @@
-/* active status måste läggas till på kortet som skapas  */
+
 <template>
   <div class="home">
     <header>
@@ -21,15 +21,12 @@
     </main>
   </div>
 </template>
-
 <script>
 import Top from '@/components/Top.vue'
 import Card from '@/components/Card.vue'
 import CardStack from '../components/CardStack.vue'
-
 export default {
   name: 'Home',
-
   components: {
     Top, Card,
     CardStack
@@ -60,7 +57,6 @@ export default {
   .delBtn {
     position: relative;
   }
-
   .delBtn::before {
     content: '';
     position: absolute;
@@ -73,7 +69,6 @@ export default {
     border-radius: 100%;
     cursor: pointer;
   }
-
   .delBtn::after {
     content: 'x';
     position: absolute;

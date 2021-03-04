@@ -10,8 +10,7 @@
                 name="card-number" 
                 placeholder="XXXX XXXX XXXX XXXX"
                 maxlength="16"
-                v-model="card.number"
-            >
+                v-model="card.number">
         </div>
         <div class="card-holder col-2">
             <label for="card-holder">
@@ -21,15 +20,13 @@
                 type="text"
                 name="card-holder"
                 placeholder="Förnamn Efternamn"
-                v-model="card.holder"
-            >
+                v-model="card.holder">
         </div>
         <div class="form-month">
             <label for="month">Månad</label>
             <select
                 name="month"
-                v-model="card.validMonth"
-            >
+                v-model="card.validMonth">
                 <option value=""></option>
                 <option value="01">01</option>
                 <option value="02">02</option>
@@ -49,8 +46,7 @@
             <label for="year">År</label>
             <select
                 name="year"
-                v-model="card.validYear"
-            >
+                v-model="card.validYear">
                 <option value=""></option>
                 <option value="21">21</option>
                 <option value="22">22</option>
@@ -63,8 +59,7 @@
             <label for="vendor">Utgivare</label>
             <select
                 name="vendor"
-                v-model="card.vendor"
-            >
+                v-model="card.vendor">
                 <option value=""></option>
                 <option value="bitcoin">Bitcoin Inc</option>
                 <option value="blockchain">Blockchain Inc</option>
@@ -76,7 +71,6 @@
     <button class="cta" @click.prevent="newCard">Lägg till nytt kort</button>
 </section>
 </template>
-
 <script>
 export default {
     props: {
@@ -90,7 +84,6 @@ export default {
     },
 }
 </script>
-
 <style scoped>
 .card-form {
     margin: 2rem 0 0;
@@ -98,11 +91,9 @@ export default {
     grid-template-columns: 1fr 1fr;
     gap: 0 1rem;
 }
-
 .form-month {
     grid-column-start: 1;
 }
-
 input, select {
     border: 1px solid #000;
     border-radius: .25rem;
@@ -114,11 +105,9 @@ input, select {
     font-size: 1rem;
     width: 100%;
 }
-
 label {
     text-transform: uppercase;
     font-size: .7rem;
     margin: 0 0.25rem;
 }
-
 </style>

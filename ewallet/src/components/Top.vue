@@ -1,13 +1,9 @@
 
 <template>
     <section class="top">
-      <header>
-        <h1> {{ title }} </h1>
-      </header>
       <p> {{ subTitle }} </p>
     </section>
 </template>
-
 <script>
 export default {
   beforeMount() {
@@ -22,7 +18,6 @@ export default {
       topData: [
         {
           name: 'Home',
-          title: 'Ewallet',
           subTitle: 'Aktivt Kort',
           state: false
         },
@@ -49,13 +44,11 @@ export default {
   section {
     text-align: center;
   }
-
   h1 {
     font-family: 'none';
     font-size: 32px;
     margin: 24px 0;
   }
-  
   p {
     font-size: 0.8rem;
     color: rgb(0, 0, 0);

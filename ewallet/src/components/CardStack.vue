@@ -9,17 +9,14 @@
         </section>
         <button 
             class="addbutton"
-            @click.prevent="toCardForm"
-        >
+            @click.prevent="toCardForm">
         Lägg till kort
         </button>
     </div>
 </template>
-
 <script>
 import Card from './Card.vue'
-export default {
-    
+export default {  
     components: { 
         Card
     },
@@ -36,7 +33,6 @@ export default {
     }
 }
 </script>
-
 <style scoped>
     ul {
         list-style: none;
@@ -51,7 +47,6 @@ export default {
         margin-top: -10rem;
         cursor: pointer;
     }
-
     li:first-child {
         margin-top: 32px;
     }
