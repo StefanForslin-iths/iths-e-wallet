@@ -1,4 +1,4 @@
-# e-wallet
+# e-wallet-project
 
 ## Project setup
 ```
