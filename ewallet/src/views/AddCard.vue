@@ -13,7 +13,7 @@
   </div>
 </template>
 <script>
-import Top from '@/components/Top.vue'
+import Top from '@/components/OverComponent.vue'
 import Card from '@/components/Card.vue'
 import CardForm from '@/components/CardForm.vue'
 export default {

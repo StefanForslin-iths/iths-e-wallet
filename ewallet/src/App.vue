@@ -14,7 +14,7 @@
 }
 body {
   margin: 0;
-  background-color: aqua;
+  background-color: rgb(210, 240, 240);
 }
 #app {
   width: 24rem;
@@ -34,15 +34,15 @@ body {
     height: 100px;
     width: 100%;
     margin: 2rem 0;
-    border: .125rem dotted rgb(201, 111, 111);
+    border: .125rem dotted rgb(199, 196, 196);
     border-radius: 0px;
     background-color: #fff;
     font-size: 1.2rem;
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: lowercase;
 }
 .addbutton:hover {
-    background-color: rgb(15, 78, 150);
+    background-color: rgb(130, 153, 179);
     color: #fff;
 }
 </style>

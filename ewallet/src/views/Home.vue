@@ -2,7 +2,7 @@
 <template>
   <div class="home">
     <header>
-      <Top />
+      <OverComponent />
     </header>
     <main>
       <div 
@@ -17,19 +17,19 @@
           v-bind:card="activeCard"
         />
       </div>
-      <CardStack v-bind:cards="cards" />
+      <CardSource v-bind:cards="cards" />
     </main>
   </div>
 </template>
 <script>
-import Top from '@/components/Top.vue'
+import OverComponent from '@/components/OverComponent.vue'
 import Card from '@/components/Card.vue'
-import CardStack from '../components/CardStack.vue'
+import CardSource from '../components/CardSource.vue'
 export default {
   name: 'Home',
   components: {
-    Top, Card,
-    CardStack
+    OverComponent, Card,
+    CardSource,
   },
   data() {return {
     isHovering: false

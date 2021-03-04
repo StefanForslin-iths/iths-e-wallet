@@ -50,7 +50,7 @@ export default {
     height: 224px;
     padding: 1rem;
     border-radius: 0.6rem;
-    background: linear-gradient(237.75deg,hsla(0,0%,100%,.24),hsla(0,0%,100%,0)),#d0d0d0;
+    background-color: white;
     text-shadow: -1px -1px 2px hsla(0,0%,100%,.4);
 }
 header {
