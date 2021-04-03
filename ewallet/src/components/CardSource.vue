@@ -38,9 +38,6 @@ export default {
         list-style: none;
         padding: 0;
     }
-    /* ul, li {
-        margin:0px;
-    } */
     .stack {
         position: relative;
         width: 100%;

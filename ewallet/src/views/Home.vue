@@ -10,7 +10,7 @@
           @mouseout="hovering"
           >
           <div
-          :class="{ delBtn: isHovering }"
+          :class="{ rmbutton: isHovering }"
           @click="deleteCard()">
           </div>
         <Card  
@@ -54,10 +54,10 @@ export default {
 </script>
 <style scoped>
 /* Delete btn */
-  .delBtn {
+  .rmbutton {
     position: relative;
   }
-  .delBtn::before {
+  .rmbutton::before {
     content: '';
     position: absolute;
     background-color: rgb(70, 69, 69);
@@ -69,7 +69,7 @@ export default {
     border-radius: 100%;
     cursor: pointer;
   }
-  .delBtn::after {
+  .rmbutton::after {
     content: 'x';
     position: absolute;
     font-size: 24px;

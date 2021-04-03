@@ -22,7 +22,7 @@
                 placeholder="Förnamn Efternamn"
                 v-model="card.holder">
         </div>
-        <div class="form-month">
+        <div class="avmoth">
             <label for="month">Månad</label>
             <select
                 name="month"
@@ -55,7 +55,7 @@
                 <option value="25">25</option>
             </select>
         </div>
-        <div class="form-vendor col-2">
+        <div class="formvendor col-2">
             <label for="vendor">Utgivare</label>
             <select
                 name="vendor"
@@ -68,7 +68,7 @@
             </select>
         </div>
     </form>
-    <button class="cta" @click.prevent="newCard">Lägg till nytt kort</button>
+    <button class="new" @click.prevent="newCard">Lägg till nytt kort</button>
 </section>
 </template>
 <script>
@@ -91,7 +91,7 @@ export default {
     grid-template-columns: 1fr 1fr;
     gap: 0 1rem;
 }
-.form-month {
+.avmoth {
     grid-column-start: 1;
 }
 input, select {
@@ -109,5 +109,18 @@ label {
     text-transform: uppercase;
     font-size: .7rem;
     margin: 0 0.25rem;
+}
+.new{
+	display: grid;
+    place-items: center;
+    height: 100px;
+    width: 100%;
+    margin: 2rem 0;
+    border: .125rem dotted rgb(199, 196, 196);
+    border-radius: 0px;
+    background-color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: lowercase;
 }
 </style>

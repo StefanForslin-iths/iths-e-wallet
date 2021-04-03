@@ -1,13 +1,13 @@
 <template>
-    <article class="card" v-bind:class="card.vendor">
+    <article class="kort" v-bind:class="card.vendor">
         <header class="col-2 row-2">
-                <img class="chip" v-if="card.vendor === 'bitcoin'" src="@/assets/chip-dark.svg" alt="">
-                <img class="chip" v-else src="@/assets/chip-light.svg" alt="">
+                <img class="chip" v-if="card.vendor === 'bitcoin'" src="@/assets/chip-dark.svg" >
+                <img class="chip" v-else src="@/assets/chip-light.svg" >
                 <div>
-                    <img v-if="card.vendor === 'bitcoin'" src="@/assets/vendor-bitcoin.svg" alt="">
-                    <img v-else-if="card.vendor === 'blockchain'" src="@/assets/vendor-blockchain.svg" alt="">
-                    <img v-else-if="card.vendor === 'evil'" src="@/assets/vendor-evil.svg" alt="">
-                    <img v-else-if="card.vendor === 'ninja'" src="@/assets/vendor-ninja.svg" alt="">
+                    <img v-if="card.vendor === 'bitcoin'" src="@/assets/vendor-bitcoin.svg" >
+                    <img v-else-if="card.vendor === 'blockchain'" src="@/assets/vendor-blockchain.svg" >
+                    <img v-else-if="card.vendor === 'evil'" src="@/assets/vendor-evil.svg" >
+                    <img v-else-if="card.vendor === 'ninja'" src="@/assets/vendor-ninja.svg" >
                 </div>
         </header>
         <section class="number col-2" v-if="card.number"> {{ cardNumber }} </section>
@@ -41,7 +41,7 @@ export default {
 * {
     box-sizing: border-box;
 }
-.card {
+.kort {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 2.8rem;
