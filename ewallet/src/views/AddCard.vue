@@ -5,7 +5,7 @@
     </header>
     <main>
       <Card v-bind:card="card" />
-      <CardForm 
+      <CardMod 
         v-bind:card="card"
         v-on:addCard="pushCard()"
         />
@@ -15,12 +15,12 @@
 <script>
 import Top from '@/components/OverComponent.vue'
 import Card from '@/components/Card.vue'
-import CardForm from '@/components/CardForm.vue'
+import CardMod from '@/components/CardMod.vue'
 export default {
   components: {
     Top,
     Card,
-    CardForm
+    CardMod
   },
   data() {
     return {

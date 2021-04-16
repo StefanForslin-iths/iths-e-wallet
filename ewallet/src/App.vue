@@ -10,7 +10,7 @@
 }
 body {
   margin: 0;
-  background-color: rgb(210, 240, 240);
+  background-color: rgb(180, 141, 141);
 }
 #app {
   width: 24rem;
