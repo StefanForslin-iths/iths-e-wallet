@@ -11,6 +11,7 @@
 }
 body {
   margin: 0;
+  background-color: aquamarine;
 }
 #app {
   width: 24rem;
