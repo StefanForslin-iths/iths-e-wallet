@@ -19,7 +19,7 @@
             <input 
                 type="text"
                 name="card-holder"
-                placeholder="Firstname Lastname"
+                placeholder="FÖR- OCH EFTERNAMN"
                 v-model="card.holder">
         </div>
         <div class="form-month">

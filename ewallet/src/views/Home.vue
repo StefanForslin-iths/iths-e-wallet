@@ -67,7 +67,6 @@ export default {
     border-radius: 100%;
     cursor: pointer;
   }
-
   .delBtn::after {
     content: 'x';
     position: absolute;
