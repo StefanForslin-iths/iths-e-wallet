@@ -47,13 +47,11 @@ export default {
   section {
     text-align: center;
   }
-
   h1 {
     font-family: 'Source Sans Pro';
     font-size: 32px;
     margin: 24px 0;
   }
-  
   p {
     font-size: 0.8rem;
     color: rgba(0,0,0,.4);
