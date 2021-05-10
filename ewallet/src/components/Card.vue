@@ -1,13 +1,13 @@
 <template>
-    <article class="kort" v-bind:class="card.vendor">
+    <article class="card" v-bind:class="card.vendor">
         <header class="col-2 row-2">
-                <img class="chip" v-if="card.vendor === 'bitcoin'" src="@/assets/chip-dark.svg" >
-                <img class="chip" v-else src="@/assets/chip-light.svg" >
+                <img class="chip" v-if="card.vendor === 'bitcoin'" src="@/assets/chip-dark.svg" alt="">
+                <img class="chip" v-else src="@/assets/chip-light.svg" alt="">
                 <div>
-                    <img v-if="card.vendor === 'bitcoin'" src="@/assets/vendor-bitcoin.svg" >
-                    <img v-else-if="card.vendor === 'blockchain'" src="@/assets/vendor-blockchain.svg" >
-                    <img v-else-if="card.vendor === 'evil'" src="@/assets/vendor-evil.svg" >
-                    <img v-else-if="card.vendor === 'ninja'" src="@/assets/vendor-ninja.svg" >
+                    <img v-if="card.vendor === 'bitcoin'" src="@/assets/vendor-bitcoin.svg" alt="">
+                    <img v-else-if="card.vendor === 'blockchain'" src="@/assets/vendor-blockchain.svg" alt="">
+                    <img v-else-if="card.vendor === 'evil'" src="@/assets/vendor-evil.svg" alt="">
+                    <img v-else-if="card.vendor === 'ninja'" src="@/assets/vendor-ninja.svg" alt="">
                 </div>
         </header>
         <section class="number col-2" v-if="card.number"> {{ cardNumber }} </section>
@@ -31,7 +31,7 @@ export default {
         card: Object
     },
     computed: {
-        cardProperties(){
+        cardNumber(){
         return this.card.number.match(/.{1,4}/g).join(' ')
         },
     },
@@ -41,7 +41,7 @@ export default {
 * {
     box-sizing: border-box;
 }
-.kort {
+.card{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 2.8rem;
@@ -50,9 +50,11 @@ export default {
     height: 224px;
     padding: 1rem;
     border-radius: 0.6rem;
-    background-color: white;
+    background: linear-gradient(237.75deg,hsla(0,0%,100%,.24),hsla(0,0%,100%,0)),#d0d0d0;
+    box-shadow: 0 0 0.5rem rgba(0,0,0,.4);
     text-shadow: -1px -1px 2px hsla(0,0%,100%,.4);
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -69,6 +71,7 @@ header {
     display: flex;
     justify-content: space-between;
 }
+
 span {
     display: block;
     text-transform: uppercase;
@@ -76,7 +79,7 @@ span {
     margin: 0 0 0.25rem;
 }
 .output-text {
-    text-transform: uppercase;  
+    text-transform: uppercase;
     margin: 0;
     padding: 0;
 }
@@ -84,7 +87,7 @@ span {
     text-align: end;
 }
 .evil {
-    background: linear-gradient(248.3deg,rgba(0,0,0,.16),transparent),#961b1b;
+    background: linear-gradient(248.3deg,rgba(0,0,0,.16),transparent),#f33355;
     color: #fff;
 }
 .blockchain {
@@ -92,7 +95,7 @@ span {
     color: #fff;
 }
 .bitcoin {
-    background: linear-gradient(.689turn,hsla(0,0%,100%,.15),hsla(0,0%,100%,0) 99.07%),#ff3434;
+    background: linear-gradient(.689turn,hsla(0,0%,100%,.15),hsla(0,0%,100%,0) 99.07%),#ffae34;
     color: #222;
 }
 .ninja {

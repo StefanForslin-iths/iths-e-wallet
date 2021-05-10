@@ -1,6 +1,8 @@
-
 <template>
     <section class="top">
+      <header>
+        <h1> {{ title }} </h1>
+      </header>
       <p> {{ subTitle }} </p>
     </section>
 </template>
@@ -18,12 +20,13 @@ export default {
       topData: [
         {
           name: 'Home',
+          title: 'Ewallet',
           subTitle: 'Aktivt Kort',
           state: false
         },
         {
           name: 'AddCard',
-          title: 'Nytt Kort',
+          title: 'Lägg till nytt kort',
           subTitle: 'Kort',
           state: false
         }
@@ -44,14 +47,16 @@ export default {
   section {
     text-align: center;
   }
+
   h1 {
-    font-family: 'none';
+    font-family: 'Source Sans Pro';
     font-size: 32px;
     margin: 24px 0;
   }
+  
   p {
     font-size: 0.8rem;
-    color: rgb(0, 0, 0);
+    color: rgba(0,0,0,.4);
     font-weight: 600;
     margin: 4px 0;
   }

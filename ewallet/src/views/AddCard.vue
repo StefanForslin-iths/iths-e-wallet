@@ -1,11 +1,11 @@
 <template>
   <div>
     <header>
-      <Top />
+      <OverComponent />
     </header>
     <main>
       <Card v-bind:card="card" />
-      <CardMod 
+      <CardMod
         v-bind:card="card"
         v-on:addCard="pushCard()"
         />
@@ -13,12 +13,12 @@
   </div>
 </template>
 <script>
-import Top from '@/components/OverComponent.vue'
+import OverComponent from '@/components/OverComponent.vue'
 import Card from '@/components/Card.vue'
 import CardMod from '@/components/CardMod.vue'
 export default {
   components: {
-    Top,
+    OverComponent,
     Card,
     CardMod
   },

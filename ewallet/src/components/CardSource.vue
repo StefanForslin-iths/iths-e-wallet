@@ -8,7 +8,7 @@
             </ul>
         </section>
         <button 
-            class="addbutton"
+            class="cta"
             @click.prevent="toCardForm">
         Lägg till kort
         </button>
@@ -16,7 +16,7 @@
 </template>
 <script>
 import Card from './Card.vue'
-export default {  
+export default { 
     components: { 
         Card
     },

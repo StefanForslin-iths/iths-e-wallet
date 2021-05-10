@@ -1,4 +1,3 @@
-
 <template>
   <div class="home">
     <header>
@@ -10,8 +9,8 @@
           @mouseout="hovering"
           >
           <div
-          :class="{ rmbutton: isHovering }"
-          @click="deleteCard()">
+          :class="{ delBtn: isHovering }"
+          @click="removeCard()">
           </div>
         <Card  
           v-bind:card="activeCard"
@@ -29,7 +28,7 @@ export default {
   name: 'Home',
   components: {
     OverComponent, Card,
-    CardSource,
+    CardSource
   },
   data() {return {
     isHovering: false
@@ -46,21 +45,20 @@ export default {
     hovering() {
       this.isHovering = !this.isHovering
     },
-    deleteCard() {
-      this.$root.setDeleteCard()
+    removeCard() {
+      this.$root.setRemoveCard()
     }
   }
 }
 </script>
 <style scoped>
-/* Delete btn */
-  .rmbutton {
+  .delBtn {
     position: relative;
   }
-  .rmbutton::before {
+  .delBtn::before {
     content: '';
     position: absolute;
-    background-color: rgb(70, 69, 69);
+    background-color: #000;
     opacity: 0.8;
     width: 32px;
     height: 32px;
@@ -69,7 +67,8 @@ export default {
     border-radius: 100%;
     cursor: pointer;
   }
-  .rmbutton::after {
+
+  .delBtn::after {
     content: 'x';
     position: absolute;
     font-size: 24px;

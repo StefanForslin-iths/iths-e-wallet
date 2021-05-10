@@ -4,13 +4,13 @@
   </div>
 </template>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 * {
   box-sizing: border-box;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: PT Mono,monospace;
 }
 body {
   margin: 0;
-  background-color: rgb(180, 141, 141);
 }
 #app {
   width: 24rem;
@@ -24,21 +24,22 @@ body {
 .row-2 {
     grid-row: auto / span 2;
 }
-.addbutton {
+.cta {
     display: grid;
     place-items: center;
-    height: 100px;
+    height: 4rem;
     width: 100%;
     margin: 2rem 0;
-    border: .125rem dotted rgb(199, 196, 196);
-    border-radius: 0px;
+    border: .125rem solid #000;
+    border-radius: .5rem;
     background-color: #fff;
     font-size: 1.2rem;
     font-weight: 600;
-    text-transform: lowercase;
+    text-transform: uppercase;
 }
-.addbutton:hover {
-    background-color: rgb(130, 153, 179);
+.cta:hover {
+    background-color: #000;
     color: #fff;
 }
 </style>
+
