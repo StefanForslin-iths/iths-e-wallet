@@ -11,7 +11,7 @@
 }
 body {
   margin: 0;
-  background-color: aquamarine;
+  background-color: rgb(245, 212, 212);
 }
 #app {
   width: 24rem;
@@ -31,7 +31,7 @@ body {
     height: 4rem;
     width: 100%;
     margin: 2rem 0;
-    border: .125rem solid #000;
+    border: .125rem dotted #000;
     border-radius: .5rem;
     background-color: #fff;
     font-size: 1.2rem;
@@ -39,7 +39,7 @@ body {
     text-transform: uppercase;
 }
 .cta:hover {
-    background-color: #000;
+    background-color: rgb(196, 188, 188);
     color: #fff;
 	cursor: pointer;
 }

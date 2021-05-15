@@ -10,7 +10,8 @@
                 name="card-number" 
                 placeholder="XXXX XXXX XXXX XXXX"
                 maxlength="16"
-                v-model="card.number">
+                v-model="card.number"
+            >
         </div>
         <div class="card-holder col-2">
             <label for="card-holder">
@@ -19,14 +20,16 @@
             <input 
                 type="text"
                 name="card-holder"
-                placeholder="FÖR- OCH EFTERNAMN"
-                v-model="card.holder">
+                placeholder="Firstname Lastname"
+                v-model="card.holder"
+            >
         </div>
         <div class="form-month">
             <label for="month">Månad</label>
             <select
                 name="month"
-                v-model="card.validMonth">
+                v-model="card.validMonth"
+            >
                 <option value=""></option>
                 <option value="01">01</option>
                 <option value="02">02</option>
@@ -46,7 +49,8 @@
             <label for="year">År</label>
             <select
                 name="year"
-                v-model="card.validYear">
+                v-model="card.validYear"
+            >
                 <option value=""></option>
                 <option value="21">21</option>
                 <option value="22">22</option>
@@ -59,7 +63,8 @@
             <label for="vendor">Utgivare</label>
             <select
                 name="vendor"
-                v-model="card.vendor">
+                v-model="card.vendor"
+            >
                 <option value=""></option>
                 <option value="bitcoin">Bitcoin Inc</option>
                 <option value="blockchain">Blockchain Inc</option>
@@ -71,6 +76,7 @@
     <button class="cta" @click.prevent="addCard">Lägg till nytt kort</button>
 </section>
 </template>
+
 <script>
 export default {
     props: {

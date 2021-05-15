@@ -10,7 +10,7 @@
           >
           <div
           :class="{ delBtn: isHovering }"
-          @click="removeCard()">
+          @click="deleteCard()">
           </div>
         <Card  
           v-bind:card="activeCard"
@@ -45,8 +45,8 @@ export default {
     hovering() {
       this.isHovering = !this.isHovering
     },
-    removeCard() {
-      this.$root.setRemoveCard()
+    deleteCard() {
+      this.$root.setDeleteCard()
     }
   }
 }
@@ -58,7 +58,7 @@ export default {
   .delBtn::before {
     content: '';
     position: absolute;
-    background-color: #000;
+    background-color: rgb(78, 68, 68);
     opacity: 0.8;
     width: 32px;
     height: 32px;
