@@ -20,7 +20,7 @@
             <input 
                 type="text"
                 name="card-holder"
-                placeholder="Firstname Lastname"
+                placeholder="Förnamn Efternamn"
                 v-model="card.holder"
             >
         </div>
